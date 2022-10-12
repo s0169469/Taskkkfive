@@ -4,7 +4,7 @@
   
   .col-sm-12 {
     font-size:25px;
-    font-family: sans-serif;
+    font-family: serif;
     font-style:normal;
     background-color:Thistle;
   }
@@ -14,15 +14,15 @@
   }
   #priceOfOrderField {
     font-size:25px;
-    font-family sans-serif;
+    font-family: serif;
     background-color:SlateBlue; 
   }
   input{
     font-size:15px;
-    font-family: sans-serif;
+    font-family: serif;
     background-color: LightCyan;
     border: 1px solid black;
-    width: 65px;
+    width: 180px;
   }
  #CalculateButton{
   font-size:15px;
