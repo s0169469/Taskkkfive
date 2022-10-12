@@ -1,23 +1,28 @@
-function calc() {
-    let form = document.forms.calculator;
-    const regex = /^[1-9][0-9]*$/;
-    for(let i = 0; i<8; i++) {
-        let price = form.elements['price' + i].value;
-        let count = form.elements['count' + i].value;
-        if(!count.match(regex)){
-            alert("Введенные данные некорректны");
-            break;
-        }
+function answer_click_event() {
+    var price_input = document.getElementById("price_input");
+    var amount_input = document.getElementById("amount_input");
+    var answer_element = document.getElementById("answer_element");
+
+    var check_is_number = /^[0-9]+$/;
+
+    var check_a = check_is_number.test(price_input.value);
+    var check_b = check_is_number.test(amount_input.value);
+    var wrong_data = "Неправильный формат ввода! Вводить только цифры!";
+
+    var ans = 0;
+
+    if (check_a && check_b) {
+        ans = (Number(price_input.value) + Number(amount_input.value));
+        answer_element.innerText = "Ответ: " + ans;
+    } else {
+        answer_element.innerText = wrong_data;
     }
-    let result = document.getElementById("result");
-    let sum = 0;
-    for(let i = 0; i<8; i++){
-        sum+=form.elements['price' + i].value * form.elements['count' + i].value;
-    }
-    result.innerHTML = "Итоговая стоимость  " + sum;
 }
-window.addEventListener("DOMContentLoaded", function (event) {
-  console.log("DOM fully loaded and parsed");
-  let b = document.getElementById("CalculateButton");
-  b.addEventListener("click", calc);
-});
+
+function main() {
+    var make_answer_button = document.getElementById("make_answer_button");
+    make_answer_button.addEventListener("click", answer_click_event);
+
+}
+
+document.addEventListener("DOMContentLoaded", main);
