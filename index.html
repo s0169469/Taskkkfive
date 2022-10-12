@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width initial-scale=1,shrink-to-fit=no">
+    <title>Задание 5. Кузнецова Софья 22-2</title>
+    <script src="scriptt.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="d-flex flex-column">
+      <div id="header" class="col-sm-12 p-1 order-md-0 mx-auto">
+        <header>
+          <img class="p-2 m-0.5 float-left" src="img.png" alt="There is an image" />
+          <h1 class="text-center">Калькулятор стоимости</h1>
+        </header>
+      </div>
+      <div id="priceOfOrderField" class="form-group col-sm-12 text-center col-md-7 p-1 order-md-2 mx-auto">
+        <h2>Корзина покупок</h2>
+        <form name="calculator" onsubmit="return false;">
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    <b>Название товара</b>
+                </div>
+             <div class="col-2 col-md-2">
+                    <b>Цена</b>
+                </div>
+                <div class="col-2 col-md-2">
+                    <b>Количество</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                   Товар 1
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price" type="text" value="27">
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="count" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 2
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price0" type="text" value="550">
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="count0" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                   Товар 3
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price1" type="text" value="678">
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="count1" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 4
+                </div>
+             <div class="col-2 col-md-2">
+                    <input name="price2" type="text" value="475">
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="count2" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                   Товар 5
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price3" type="text" value="323">
+                </div>
+               <div class="col-2 col-md-2">
+                    <input name="count3" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                   Товар 6
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price4" type="text" value="97">
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="count4" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 7
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price5" type="text" value="400">
+                </div>
+              <div class="col-2 col-md-2">
+                    <input name="count5" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 8
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price6" type="text" value="976">
+                </div>
+              <div class="col-2 col-md-2">
+                    <input name="count6" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 9
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price7" type="text" value="400">
+                </div>
+              <div class="col-2 col-md-2">
+                    <input name="count7" type="text" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    Товар 10
+                </div>
+                <div class="col-2 col-md-2">
+                    <input name="price8" type="text" value="5678">
+                </div>
+              <div class="col-2 col-md-2">
+                    <input name="count8" type="text" value="0">
+                </div>
+            </div>
+            <button id = "CalculateButton">Посчитать</button>
+            
+        </form>
+        <div class="pt-2" id="result"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
