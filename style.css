@@ -30,3 +30,7 @@
   background-color: IndianRed;
   border: 1px solid black; 
  }
+#header img{
+    width: 150px;
+    height: 150px;
+}
