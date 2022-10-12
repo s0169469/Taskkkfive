@@ -1,0 +1,32 @@
+.container-fluid{
+    background-color:PaleGreen;
+  }
+  
+  .col-sm-12 {
+    font-size:25px;
+    font-family: sans-serif;
+    font-style:normal;
+    background-color:DarkCyan;
+  }
+  #header img{
+    width:110px;
+    height:150px;
+  }
+  #priceOfOrderField {
+    font-size:25px;
+    font-family sans-serif;
+    background-color:SeaGreen; 
+  }
+  input{
+    font-size:15px;
+    font-family: sans-serif;
+    background-color: DarkOliveGreen;
+    border: 1px solid black;
+    width: 65px;
+  }
+ #CalculateButton{
+  font-size:15px;
+  font-family: sans-serif;
+  background-color: YellowGreen;
+  border: 1px solid black; 
+ }
